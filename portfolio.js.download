@@ -1,0 +1,3 @@
+<script type="text/javascript">
+setTimeout(ClickTheLink,5000);
+function ClickTheLink() { document.getElementById("my-link-element").click(); }
