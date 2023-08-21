@@ -5,9 +5,15 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(10,10,15);
+    background: rgb(10,10,15);
+    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 500%);
 }
 
 .header{
@@ -19,9 +25,15 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    z-index: 1;
     background: rgb(10,10,15);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 0%, rgba(123,229,239,1) 400%);
-    box-shadow: 0px 20px 10px -24px rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 1000%);
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav ul{
@@ -59,8 +71,6 @@ nav ul li a:hover{
 
 .header .introduction{
     display: flex;
-    background: rgb(10,10,15);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 300%);
 }
 
 .header .introduction .myself{
@@ -117,7 +127,7 @@ nav ul li a:hover{
     margin-left: 250px;
     height: 370px;
     width: 230px;
-    filter: grayscale(100%);
+    mix-blend-mode: luminosity;
     box-shadow:
     -50px -50px 0 -40px var(--red),
     50px 50px 0 -40px var(--red);
@@ -125,9 +135,8 @@ nav ul li a:hover{
 
 .container{
     padding-top: 50px;
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 500%);
     padding-bottom: 50px;
-    box-shadow: 0px 20px 10px -24px rgb(219, 244, 246);
+    width: 100%;
 }
 
 .subheading{
@@ -141,12 +150,12 @@ nav ul li a:hover{
 }
 
 .cards{
-    align-items: center;
-    justify-content: center;
-    height: 544px;
+    justify-items: center;
+    height: 300px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .item{
@@ -154,13 +163,10 @@ nav ul li a:hover{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 250px;
-    width: 380px;
+    width: 400px;
     background: rgb(123,229,239);
-    margin: 10px;
-    padding: 3px;
     color: rgb(10,10,15);
-    opacity: 0.6;
+    opacity: 0.8;
     border-radius: 5px;
 }
 
@@ -207,8 +213,6 @@ nav ul li a:hover{
 
 .about{
     padding: 50px 50px;
-    background: rgb(10,10,15);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 300%);
 }
 
 .aboutcontent{
@@ -227,9 +231,12 @@ nav ul li a:hover{
 }
 
 .info p{
+    display: flex;
     font-size: 20px;
     margin-top: 20px;
-    font-weight: 100;
+    font-weight: 300;
+    font-style: inherit;
+    opacity: 0.8;
 }
 
 .aboutimg{
@@ -239,11 +246,12 @@ nav ul li a:hover{
 }
 
 .aboutimg img{
-    margin-left: 200px;
-    height: 425px;
-    width: 400px;
+    margin-left: 100px;
+    height: 525px;
+    width: 500px;
     filter: grayscale(50%);
-    border-radius: 10px;
+    border-radius: 8px;
+    mix-blend-mode: luminosity;
 }
 
 .form{
@@ -252,7 +260,6 @@ nav ul li a:hover{
     flex-direction: column;
     padding-top: 50px;
     color: rgb(123,229,239);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 500%);
     padding-bottom: 50px;
 }
 
@@ -345,8 +352,6 @@ input:hover{
     display: flex;
     flex-direction: column;
     color: rgb(10, 10, 14);
-    background: rgb(10,10,15);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 300%);
     font-weight: 600;
 }
 
@@ -370,6 +375,12 @@ input:hover{
     padding-right: 100px;
 }
 
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .secnavname{
     display: flex;
     align-items: center;
@@ -377,7 +388,6 @@ input:hover{
     color: rgb(123,229,239);
     font-size: 15px;
 }
-
 
 .secnav ul{
     list-style: none;
@@ -435,5 +445,4 @@ input:hover{
     padding-top: 10px;
     padding-bottom: 10px;
     color: rgb(123,229,239);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 500%);
 }
