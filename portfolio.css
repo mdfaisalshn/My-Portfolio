@@ -11,9 +11,7 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(10,10,15);
-    background: rgb(10,10,15);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 500%);
+    background-color: rgb(31, 31, 31);
 }
 
 .header{
@@ -25,9 +23,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    z-index: 1;
-    background: rgb(10,10,15);
-    background: linear-gradient(90deg, rgba(10,10,15,1) 1%, rgba(123,229,239,1) 1000%);
+    z-index: 9;
 }
 
 .sticky{
@@ -55,11 +51,11 @@ nav ul li a{
 
 nav ul li a:hover{
     font-size: 14px;
-    color: rgb(123, 229, 236);
+    color: white;
 }
 
 .left{
-    color: rgb(123, 229, 236);
+    color: white;
     font-weight: bolder;
     font-size: 18px;
     margin-left: 150px;
@@ -69,38 +65,45 @@ nav ul li a:hover{
     margin-right: 25px;
 }
 
+.bg-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
 .header .introduction{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
 }
 
 .header .introduction .myself{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 150px 200px;
     color: white;
+    z-index: 1;
 }
 
 #hello{
     font-weight: 200;
-    font-size: 30px;
-    text-shadow: 2px 2px rgb(10, 10, 15);
+    font-size: 20px;
 }
 
 #name{
     font-size: 60px;
-    color: rgb(123, 229, 236);
-    text-shadow: 2px 2px rgb(10, 10, 15);
-}
-
-#and{
-    font-weight: 200;
-    font-size: 30px;
-    margin-top: 10px;
-    text-shadow: 2px 2px rgb(10, 10, 15);
+    color: white;
 }
 
 #post{
-    font-size: 60px;
-    color: rgb(123, 229, 236);
-    text-shadow: 2px 2px rgb(10, 10, 15);
+    font-size: 30px;
+    color: white;
 }
 
 .social{
@@ -119,18 +122,7 @@ nav ul li a:hover{
 }
 
 :root{
-    --red: rgb(40, 40, 40);
-}
-
-.introduction img{
-    margin-top: 85px;
-    margin-left: 250px;
-    height: 370px;
-    width: 230px;
-    mix-blend-mode: luminosity;
-    box-shadow:
-    -50px -50px 0 -40px var(--red),
-    50px 50px 0 -40px var(--red);
+    --red: white;
 }
 
 .container{
@@ -143,7 +135,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(123,229,239);
+    color: white;
     font-size: 35px;
     padding-bottom: 25px;
     font-weight: 500;
@@ -164,7 +156,7 @@ nav ul li a:hover{
     justify-content: space-around;
     flex-direction: column;
     width: 400px;
-    background: rgb(123,229,239);
+    background: white;
     color: rgb(10,10,15);
     opacity: 0.8;
     border-radius: 5px;
@@ -173,7 +165,7 @@ nav ul li a:hover{
 .item:hover{
     transition: 0.4s;
     transform: translate(-3px, -3px);
-    background-color: rgb(123,229,239);
+    background-color: white;
     opacity: 1;
 }
 
@@ -199,7 +191,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(123,229,239);
+    color: white;
     background-color: rgb(10,10,15);
     border-radius: 5px;
 }
@@ -207,7 +199,7 @@ nav ul li a:hover{
 .button:hover{
     transition: 0.5s;
     box-shadow: 0 10px 15px rgb(10, 10, 14);
-    background-color: rgb(123, 229, 236);
+    background-color: white;
     color: rgb(10, 10, 14);
 }
 
@@ -226,7 +218,7 @@ nav ul li a:hover{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    color: rgb(123, 229, 236);
+    color: white;
     padding: 50px 50px;
 }
 
@@ -247,11 +239,9 @@ nav ul li a:hover{
 
 .aboutimg img{
     margin-left: 100px;
-    height: 525px;
-    width: 500px;
-    filter: grayscale(50%);
-    border-radius: 8px;
-    mix-blend-mode: luminosity;
+    height: 350px;
+    width: 400px;
+    border-radius: 100%;
 }
 
 .form{
@@ -259,7 +249,7 @@ nav ul li a:hover{
     align-items: center;
     flex-direction: column;
     padding-top: 50px;
-    color: rgb(123,229,239);
+    color: white;
     padding-bottom: 50px;
 }
 
@@ -297,7 +287,7 @@ input{
     border: 1px solid rgb(10,10,15);
     border-radius: 5px;
     padding: 3px 3px;
-    background-color: rgb(123,229,239);
+    background-color: white;
     margin-bottom: 10px;
     margin-top: 10px;
     opacity: 0.5;
@@ -318,7 +308,7 @@ input:hover{
     border: 1px solid rgb(10,10,15);
     border-radius: 10px;
     padding: 3px 3px;
-    background-color: rgb(123,229,239);
+    background-color: white;
     margin-top: 10px;
     opacity: 0.5;
     padding-top: 10px;
@@ -336,7 +326,7 @@ input:hover{
     align-items: center;
     justify-content: center;
     color: rgb(10,10,15);
-    background-color: rgb(123,229,239);
+    background-color: white;
     border-radius: 5px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -356,7 +346,7 @@ input:hover{
 }
 
 .footerone{
-    color: rgb(123, 229, 236);
+    color: white;
     font-weight: bolder;
     font-size: 30px;
     margin-right: 600px;
@@ -385,7 +375,7 @@ input:hover{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    color: rgb(123,229,239);
+    color: white;
     font-size: 15px;
 }
 
@@ -413,7 +403,7 @@ input:hover{
 }
 
 .secnav ul li a:hover{
-    color: rgb(123,229,239);
+    color: white;
 }
 
 .secsocial{
@@ -423,7 +413,7 @@ input:hover{
 .secsocialname{
     flex-direction: column;
     margin-bottom: 30px;
-    color: rgb(123,229,239);
+    color: white;
     font-size: 15px;
 }
 
@@ -444,5 +434,5 @@ input:hover{
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: rgb(123,229,239);
+    color: white;
 }
