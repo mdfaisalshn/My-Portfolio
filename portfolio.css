@@ -14,6 +14,10 @@ body{
     background-color: rgb(29, 29, 29);
 }
 
+span{
+    color: aquamarine;
+}
+
 .header{
     flex-wrap: wrap;
 }
@@ -47,15 +51,16 @@ nav ul li a{
     font-size: 13px;
     text-decoration: none;
     color: white;
+    padding: 2px;
+    border-radius: 10%;
 }
 
 nav ul li a:hover{
-    font-size: 14px;
-    color: white;
+    color:aquamarine;
 }
 
 .left{
-    color: white;
+    color: aquamarine;
     font-weight: bolder;
     font-size: 18px;
     margin-left: 150px;
@@ -91,6 +96,7 @@ nav ul li a:hover{
     z-index: 1;
 }
 
+
 #hello{
     font-weight: 200;
     font-size: 20px;
@@ -98,7 +104,7 @@ nav ul li a:hover{
 
 #name{
     font-size: 60px;
-    color: white;
+    color: aquamarine;
 }
 
 #post{
@@ -108,7 +114,7 @@ nav ul li a:hover{
 
 .resume-link{
     text-decoration: none;
-    color: black;
+    color: aquamarine;
     font-size: 18px;
 }
 
@@ -121,12 +127,12 @@ nav ul li a:hover{
     width: 100px;
     margin-top: 20px;
     padding: 20px;
-    border: none;
+    border: white 1px solid;
     border-radius: 6px;
+    background-color: rgb(29, 29, 29);
 }
 
 .resume:hover{
-    padding: 21px;
     width: 103px;
 }
 
@@ -140,7 +146,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: aquamarine;
     font-size: 35px;
     padding-bottom: 25px;
     font-weight: 500;
@@ -196,9 +202,9 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: rgb(10,10,15);
-    border-radius: 5px;
+    border: white 1px solid;
+    border-radius: 6px;
+    background-color: rgb(29, 29, 29);
 }
 
 .button:hover{
@@ -351,7 +357,7 @@ input:hover{
 }
 
 .footerone{
-    color: white;
+    color: aquamarine;
     font-weight: bolder;
     font-size: 30px;
     margin-right: 600px;
@@ -408,7 +414,7 @@ input:hover{
 }
 
 .secnav ul li a:hover{
-    color: white;
+    color: aquamarine;
 }
 
 .secsocial{
